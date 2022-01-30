@@ -15,7 +15,10 @@ InboxSDK.load(2, 'YOUR_APP_ID_HERE').then(function(sdk){
 
                 window.onmessage = function(e) {
                     if (e.origin === "http://localhost:3000") {
-                        event.composeView.insertTextIntoBodyAtCursor(e.data);
+                        // When you click one of the templates in the list, 
+                        // it will insert the text of the template into the body of the draft (replacing any existing text there).
+                        event.composeView.setBodyText(e.data);
+                        //event.composeView.insertTextIntoBodyAtCursor(e.data);
                         modal.close();
                     }
                 };
