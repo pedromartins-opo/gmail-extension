@@ -1,0 +1,23 @@
+{
+  "name": "gmail-extension",
+  "version": "1.0.0",
+  "description": "Gmail extension that loads a list of templates from a backend server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedromartins-opo/gmail-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedromartins-opo/gmail-extension/issues"
+  },
+  "homepage": "https://github.com/pedromartins-opo/gmail-extension#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
